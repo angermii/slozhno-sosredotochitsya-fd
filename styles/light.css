@@ -16,14 +16,14 @@
   --accent-color: #ff8dcb;
   --title-text-color: #353430;
   --title-bg-color: #ff8dcb;
-  --section-title-color: #ff8dcb;
+  --section-title-color: #353430;
   --card-title: #353430;
   --card-text-color: #353430;
   --border-color: #353430;
 }
 
-.theme-light .header__theme-menu::before,
-.theme-light .header__theme-menu::after {
+ .theme-light .header__theme-menu::before,
+ .theme-light .header__theme-menu::after {
   display: none;
 }
 
@@ -41,4 +41,9 @@
   --card-text-color: #353430;
   --border-color: #353430;
   }
-}
+
+  .theme-auto .header__theme-menu::before,
+  .theme-auto .header__theme-menu::after {
+    display: none;
+  }
+} 
