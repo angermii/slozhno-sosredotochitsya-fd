@@ -19,7 +19,8 @@
     "logo"
     "paragraph";
   align-items: start;
-  padding: 10px 10px 0;
+  padding: 10px 10px;
+  margin-block-end: 40px;
   position: relative;
 }
 
@@ -90,12 +91,11 @@
   width: 70px;
   height: 26px;
   color: var(--border-color);
-  
 }
 
 .header__theme-menu-button:hover {
   cursor: pointer;
-   border: 1px solid color-mix(in srgb, var(--border-color) 40%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border-color) 40%, transparent);
 }
 
 .header__theme-menu-button_active {
@@ -135,7 +135,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding-block-end: 50px;
+  margin-block-end: 50px;
 }
 
 .section__title {
@@ -190,6 +190,10 @@
   gap: 10px;
 }
 
+.gallery__item {
+  margin: 0;
+}
+
 .pic {
   inline-size: 100%;
   object-fit: cover;
@@ -211,7 +215,9 @@
 
 @media (width >= 768px) {
   .header {
-    padding: 20px 20px 60px;
+    min-height: 1024px;
+    padding: 20px 20px;
+    margin-block-end: 60px;
   }
 
   .decorated-zone::after {
@@ -237,13 +243,19 @@
   .logo {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+
+  .header__logo {
+    margin-left: -20px;
+  }
+
   .header__paragraph {
     width: 364px;
     justify-self: end;
   }
 
   .section {
-    padding: 0 20px 80px;
+    padding: 0 20px;
+    margin-block-end: 80px;
   }
 
   .two__collumn__section {
@@ -259,7 +271,7 @@
   }
 
   .gallery {
-    padding-block-end: 60px;
+    margin-block-end: 60px;
   }
 
   .gallery__item {
@@ -302,6 +314,7 @@
 
   .footer {
     padding: 0 20px;
+    min-height: 1024px;
   }
 }
 
@@ -312,11 +325,7 @@
       "logo"
       "paragraph";
     grid-template-columns: 1fr auto;
-  }
-
-  .header__paragraph {
-    width: 491px;
-    justify-self: end;
+    min-height: 768px;
   }
 
   .header__theme-menu {
@@ -330,6 +339,14 @@
   }
 
   .header__logo {
+    align-self: flex-end;
+    justify-self: start;
+    margin-block-end: 52px;
+  }
+
+  .header__paragraph {
+    width: 491px;
+    justify-self: end;
     align-self: center;
   }
 
@@ -343,5 +360,9 @@
 
   .three__p__section__card {
     grid-row: 2;
+  }
+
+  .footer {
+    min-height: 768px;
   }
 }
