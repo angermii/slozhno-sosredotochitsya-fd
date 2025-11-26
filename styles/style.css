@@ -18,7 +18,7 @@
     "menu"
     "logo"
     "paragraph";
-    gap: 10px;
+  gap: 10px;
   align-items: start;
   padding: 10px 10px;
   margin-block-end: 40px;
@@ -60,7 +60,7 @@
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-   display: block; 
+  display: block;
 }
 
 .decorated-zone .header__theme-menu::after {
@@ -73,7 +73,7 @@
   border-radius: 50%;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
-   display: block; 
+  display: block;
 }
 
 .header__theme-menu {
@@ -142,6 +142,13 @@
 }
 
 .section__title {
+  color: var(--section-title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.cards__summ {
   color: var(--section-title-color);
   font-size: 18px;
   font-weight: 700;
@@ -266,6 +273,10 @@
     grid-template-columns: minmax(min-content, 1fr) 2fr;
   }
 
+  .two__collumn__section__title {
+    grid-row: 1 / 3;
+  }
+
   .two__collumn__section__card {
     grid-column: 2;
   }
@@ -351,9 +362,8 @@
   .header__paragraph {
     width: 491px;
     justify-self: end;
-    align-self: flex-end; 
+    align-self: flex-end;
     margin-block-end: 115px;
-    
   }
 
   .three__p__section {
