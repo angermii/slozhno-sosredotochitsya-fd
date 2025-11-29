@@ -393,7 +393,7 @@
   }
 
   .section-why {
-    grid-template-columns: minmax(315px, 1fr) minmax(649px, 2fr);
+    grid-template-columns: minmax(315px, 1fr) minmax(649px, 2.06fr);
   }
 
   .section-causes {
@@ -408,7 +408,7 @@
   }
 
   .section-advices {
-    grid-template-columns: minmax(315px, 1fr) minmax(649px, 2fr);
+    grid-template-columns: minmax(315px, 1fr) minmax(649px, 2.06fr);
   }
 
   .footer {
