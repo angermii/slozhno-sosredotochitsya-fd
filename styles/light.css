@@ -22,28 +22,27 @@
   --border-color: #353430;
 }
 
- .theme-light .header__theme-menu::before,
- .theme-light .header__theme-menu::after {
+.theme-light .header__theme-menu::before,
+.theme-light .header__theme-menu::after {
   display: none;
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
-  --background-image: url(../images/cover-image-light.png);
-  --background-color: #fff1f7;
-  --title-color: #ffc2e6;
-  --accent-color: #ff8dcb;
-  --title-text-color: #353430;
-  --title-bg-color: #ff8dcb;
-  --section-title-color: #353430;
-  --card-title: #353430;
-  --card-text-color: #353430;
-  --border-color: #353430;
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --title-text-color: #353430;
+    --title-bg-color: #ff8dcb;
+    --section-title-color: #353430;
+    --card-title: #353430;
+    --card-text-color: #353430;
+    --border-color: #353430;
   }
 
   .theme-auto .header__theme-menu::before,
   .theme-auto .header__theme-menu::after {
     display: none;
   }
-} 
+}
