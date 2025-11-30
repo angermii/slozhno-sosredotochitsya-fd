@@ -160,7 +160,7 @@
 }
 
 .cards__summ {
-  color: var(--section-title-color);
+  color: var(--card-title);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
